@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотолаборатория «Белый Бим черное ухо»</title>
+    <link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+ margin: 0;
+padding: 0;
+background-color: #f5f5f5; /* Постельный тон фона */
+transition: background-color 0.3s, color 0.3s; /* Плавный переход для фона и цвета текста */
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #e9d8d1; /* Постельный тон */
+            padding: 20px;
+            border-bottom: 2px solid #d3bfb4; /* Линия под заголовком */
+        }
+        .logo {
+            width: 100px; /* Ширина логотипа */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        nav a {
+            text-decoration: none;
+            color: #5d4c4a; /* Темный постельный тон */
+            padding: 10px 15px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #c2a59b; /* Светлый постельный тон при наведении */
+        }
+        .main-button {
+            background-color: #5d4c4a; /* Цвет главной кнопки */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .main-button:hover {
+            background-color: #7a5f5b; /* Цвет при наведении */
+        }
+        footer {
+            text-align: center;
+            background-color: #e9d8d1; /* Постельный тон */
+            padding: 15px 0;
+            border-top: 2px solid #d3bfb4; /* Линия над футером */
+            margin-top: 20px; /* Отступ сверху для разделения с контентом */
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .social-icons img {
+            width: 30px; /* Размер иконок соцсетей */
+            margin: 0 5px;
+        }
+
+        /* Мобильные стили */
+        @media (max-width: 768px) {
+            body.mobile {
+                background-color: #fff; /* Цвет фона для мобильной версии */
+                color: #333; /* Цвет текста для мобильной версии */
+            }
+            nav {
+                flex-direction: column; /* Вертикальное расположение навигации на мобильной версии */
+                align-items: center;
+            }
+            nav a {
+                margin: 5px 0; /* Отступы между ссылками на мобильной версии */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Логотип" class="logo"> <!-- Замените на путь к вашему логотипу -->
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">О нас</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#faq">Часто задаваемые вопросы</a>
+        <a href="#reviews">Отзывы</a>
+    </nav>
+    <button class="main-button" onclick="toggleDesign()">Адаптивный дизайн</button>
+    <button class="main-button" onclick="toggleView()">Переключить вид</button> <!-- Кнопка для переключения вида -->
+</header>
+
+<main>
+    <!-- Основной контент сайта -->
+</main>
+
+<footer>
+    <div class="social-icons">
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a> <!-- Замените на путь к вашей иконке Facebook -->
+
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a> <!-- Замените на путь к вашей иконке Instagram -->
+        <a href="#"><img src="vk-icon.png" alt="VK"></a> <!-- Замените на путь к вашей иконке VK -->
+    </div>
+    <p>©2025 «Белый Бим черное ухо»</p>
+</footer>
+
+<script>
+    function toggleDesign() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+        
+        if (body.classList.contains('dark-mode')) {
+            body.style.backgroundColor = '#333';
+            body.style.color = '#fff';
+        } else {
+            body.style.backgroundColor = '#f5f5f5';
+            body.style.color = '#000';
+        }
+    }
+
+    function toggleView() {
+        const body = document.body;
+        body.classList.toggle('mobile');
+
+        if (body.classList.contains('mobile')) {
+            alert("Вы переключились на мобильную версию.");
+        } else {
+            alert("Вы переключились на десктопную версию.");
+        }
+    }
+</script>
+
+</body>
+</html>
+
+

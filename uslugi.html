@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ru">
+<head>
+    
+
+        <link rel="icon" href="d:\Диплом6\Изображения\Логотип.png" type="image/x-icon"> <!-- Указывает на файл ICO иконки -->
+        <link rel="shortcut icon" href="d:\Диплом6\Изображения\Логотип.png" type="image/x-icon"> <!-- Альтернативный способ для некоторых браузеров -->
+
+
+    <title>Фотолаборатория "Белый Бим чёрное ухо"</title>
+    <link rel="stylesheet" href="css/css uslugi.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+
+
+
+    <body>
+        <img class="image-container image1" src="Изображения/4,4.jpg" alt="Слфи с котом " loading="lazy">
+        <img class="image-container image2" src="Изображения/2,2.jpg" alt="Фотография собаки с черным ухом" loading="lazy">                
+        <img class="image-container image3" src="Изображения/55.jpg" alt="Слфи с котом " loading="lazy">
+        <img class="image-container image4" src="Изображения/77.png" alt="Слфи с котом " loading="lazy">
+        <img class="image-container image5" src="Изображения/11.png" alt="Фотография собаки с черным ухом" loading="lazy">
+        <img class="image-container image6" src="Изображения/88.jpg" alt="Фотография собаки с черным ухом" loading="lazy">
+        <img class="image-container image7" src="Изображения/16.jpg" alt="Слфи с котом " loading="lazy">
+
+        <img class="image-container image8" src="Изображения/66.jpg" alt="Слфи с котом " loading="lazy">
+    
+       
+    </body>
+
+
+    
+    <header>
+        <div class="header-content">
+            <link rel="icon" href="Изображения/Логотип.png" type="image/x-icon">
+            <img src="Изображения/Логотип.png" alt="Логотип" class="logo">
+            <h1>Фотолаборатория "Белый Бим чёрное ухо"</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="pravila.html">Отзывы</a></li>
+                <li><a href="contact.html">О нас</a></li>
+                <li><a href="vopros.html">Часто задаваемые вопросы</a></li>
+                <li><a href="uslugi.html">Услуги</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="services">
+            <h2 id="services-title">Наши Услуги и Цены</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Печать фотографий</h3>
+                    <img src="https://mebelvs.ru/d/%D0%96%D0%98%D0%92%D0%9E%D0%A2%D0%9D%D0%AB%D0%95_%D1%81%D1%82%D1%80._94.jpg" alt="Печать фотографий">
+                    <ul>
+                        <li>Стандартные и увеличенные форматы</li>
+                        <li>Печать на различных материалах (фотобумага, холст, акрил и т.д.)</li>
+                    </ul>
+                    <p class="price">От 50 руб./шт.</p>
+                    <button class="order-button" data-service="Печать фотографий" data-price="50" onclick="addToCart(this)">Заказать</button>
+                </div>
+                <div class="service">
+                    <h3>Фотосъемка</h3>
+                    <img src="https://i.pinimg.com/736x/4f/77/ed/4f77eda693b942ad787f3f8f5ecd3ae9.jpg" alt="Фотосъемка">
+                    <ul>
+                        <li>Портретная съемка</li>
+                        <li>Свадебная и семейная фотография</li>
+                        <li>Фотосессии для детей и новорожденных</li>
+                        <li>Коммерческая съемка</li>
+                    </ul>
+                    <p class="price">От 3000 руб./час</p>
+                    <button class="order-button" data-service="Фотосъемка" data-price="3000" onclick="addToCart(this)">Заказать</button>
+                </div>
+                <div class="service">
+                    <h3>Обработка фотографий</h3>
+                    <img src="   https://i.pinimg.com/originals/b4/bc/6f/b4bc6fc1a2cc65ae375c7591b27afeaf.jpg" alt="Обработка фотографий">
+                    <ul>
+                        <li>Ретушь и коррекция цвета</li>
+                        <li>Создание фотомонтажей и коллажей</li>
+                    </ul>
+                    <p class="price">От 500 руб./шт.</p>
+                    <button class="order-button" data-service="Обработка фотографий" data-price="500" onclick="addToCart(this)">Заказать</button>
+                </div>
+                
+                <!-- ... (Остальные блоки услуг) ... -->
+                <div class="service">
+                    <h3>Фотокниги и альбомы</h3>
+                    <img src="https://cifrofset.ru/assets/galleries/17/anime-01.jpg " alt="Фотокниги и альбомы">
+                    <ul>
+                        <li>Дизайн и печать фотокниг</li>
+                        <li>Индивидуальные свадебные и семейные альбомы</li>
+                    </ul>
+                    <p class="price">От 2000 руб.</p>
+                    <button class="order-button" data-service="Фотокниги и альбомы" data-price="2000" onclick="addToCart(this)">Заказать</button>
+                </div>
+                <div class="service">
+                    <h3>Консультации по выбору стиля съемки</h3>
+                    <img src="  https://i.pinimg.com/736x/93/dd/da/93ddda1499ef5e1083a9c28c07b21166.jpg" alt="Консультации">
+                    <ul>
+                        <li>Помощь в выборе концепции фотосессии</li>
+                    </ul>
+                    <p class="price">Бесплатно (при заказе услуг)</p>
+                    <button class="order-button" data-service="Консультации" data-price="0" onclick="addToCart(this)">Заказать</button>
+                </div>
+                <div class="service">
+                    <h3>Организация фотосессий</h3>
+                    <img src="https://avatars.mds.yandex.net/i?id=0dd40d9219ee39749a8822659e50222e_l-4012459-images-thumbs&n=13" alt="Организация фотосессий">
+                    <ul>
+                        <li>Подбор локаций, реквизита и стилистов</li>
+                    </ul>
+                    <p class="price">Индивидуально</p>
+                    <button class="order-button" data-service="Организация фотосессий" data-price="0" onclick="addToCart(this)" disabled>Заказать</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Корзина</h2>
+            <ul id="cartItems"></ul>
+            <p>Итого: <span id="totalPriceCart">0</span> руб.</p>
+            <button onclick="clearCart()">Очистить корзину</button>
+            <button onclick="goToCheckout()">Готова</button>
+        </section>
+
+        <section id="checkout" style="display:none;">
+            <h2>Оформление заказа</h2>
+            <form action="submit_form.php" method="POST">
+                 <div>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="selectedServices">Выбранные услуги:</label>
+                    <ul id="selectedServicesList"></ul>
+                    <p>Общая сумма: <span id="totalPriceCheckout">0</span> руб.</p>
+                </div>
+                <div>
+                    <label for="date">Выберите время и дату:</label>
+                    <input type="datetime-local" id="date" name="date" required>
+                </div>
+                <div>
+                    <label for="message">Дополнительная информация:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Отправить</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Фотолаборатория «Белый Бим черное ухо». Все права защищены.</p>
+    </footer>
+
+    <script>
+        // ... (JavaScript code) ...
+        let cart = [];
+let cartTotal = 0;
+
+function addToCart(button) {
+    const service = button.dataset.service;
+    const price = parseInt(button.dataset.price, 10) || 0;
+
+    cart.push({ service, price });
+    cartTotal += price;
+    updateCart();
+}
+
+function updateCart() {
+    const cartItemsList = document.getElementById('cartItems');
+    cartItemsList.innerHTML = '';
+
+    for (const item of cart) {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.service} - ${item.price} руб.`;
+        cartItemsList.appendChild(listItem);
+    }
+
+    document.getElementById('totalPriceCart').textContent = cartTotal;
+}
+
+function clearCart() {
+    cart = [];
+    cartTotal = 0;
+    updateCart();
+}
+
+function goToCheckout() {
+    document.getElementById('services').style.display = 'none';
+    document.getElementById('cart').style.display = 'none';
+    document.getElementById('checkout').style.display = 'block';
+
+    const selectedServicesList = document.getElementById("selectedServicesList");
+    selectedServicesList.innerHTML = '';
+
+    for (const item of cart) {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.service} - ${item.price} руб.`;
+        selectedServicesList.appendChild(listItem);
+    }
+    document.getElementById('totalPriceCheckout').textContent = cartTotal;
+}
+    </script>
+</body>
+</html>

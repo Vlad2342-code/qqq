@@ -1,0 +1,248 @@
+<!DOCTYPE html>   
+<meta charset="UTF-8">   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+<html lang="ru">   
+<head>   
+    
+
+        <link rel="icon" href="d:\Диплом6\Изображения\Логотип.png" type="image/x-icon"> <!-- Указывает на файл ICO иконки -->
+        <link rel="shortcut icon" href="d:\Диплом6\Изображения\Логотип.png" type="image/x-icon"> <!-- Альтернативный способ для некоторых браузеров -->
+
+   
+    <title>Фотолаборатория "Белый Бим чёрное ухо"</title>   
+    <link rel="stylesheet" href="css/css contact.css">   
+    <style>
+        /* Добавляем стиль для основного контента */
+        .story {
+            text-align: center; /* Выровнять текст по центру */
+            font-size: 1.2em; /* Увеличить размер шрифта */
+            line-height: 1.6; /* Увеличить межстрочный интервал */
+            margin-top: 20px; /* Отступ сверху */
+        }
+        /* Стиль для карты */
+        .map-container {
+            margin-top: 20px; /* Отступ сверху */
+            text-align: center; /* Выровнять карту по центру */
+        }
+        iframe {
+            width: 100%; /* Ширина карты на 100% */
+            height: 400px; /* Высота карты */
+            border: 0; /* Убираем рамку */
+        }
+    </style>
+</head>   
+<body>   
+
+    
+    <footer>   
+        <div class="top-footer">   
+            <link rel="icon" href="Изображения/Логотип.png" type="image/x-icon">
+            <img src="Изображения/Логотип.png" alt="Логотип" class="logo">
+            <div class="header-content">   
+                <h1>Фотолаборатория "Белый Бим чёрное ухо"</h1>   
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="pravila.html">Отзывы</a></li>
+                        <li><a href="contact.html">О нас</a></li>
+                        <li><a href="vopros.html">Часто задаваемые вопросы</a></li>
+                        <li><a href="uslugi.html">Услуги</a></li>
+                    </ul>
+                </nav>  
+            </div>   
+        </div>
+<style>
+body {
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Скрывает переполнение */
+}
+
+.image-container {
+    position: absolute; /* Позволяет перемещать изображения */
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Тонкая полупрозрачная рамка */
+    border-radius: 8px; /* Скругленные углы */
+    transition: transform 0.3s, opacity 0.3s, box-shadow 0.3s; /* Плавный переход */
+    opacity: 0; /* Начальная прозрачность для анимации загрузки */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Легкая тень под изображением */
+}
+
+/* Примеры начальных координат, наклона и размеров для изображений */
+.image1 { 
+    top: 680px; /* Устанавливает верхнее положение изображения на 660 пикселей от верхнего края */
+    left: 105px; /* Устанавливает левое положение изображения на 135 пикселей от левого края (зеркальное размещение) */
+    width: 14vw; /* Устанавливает ширину изображения на 14% от ширины окна просмотра */
+    height: auto; /* Высота изображения автоматически подстраивается в соответствии с его пропорциями */
+    transform: rotate(15deg); /* Поворачивает изображение на 15 градусов по часовой стрелке */
+}
+
+.image2 { 
+    top: 420px; /* Устанавливает верхнее положение изображения на 450 пикселей от верхнего края */
+    left: 86px; /* Устанавливает левое положение изображения на 200 пикселей от левого края (зеркальное размещение) */
+    width: 14vw; /* Устанавливает ширину изображения на 14% от ширины окна просмотра */
+    height: auto; /* Высота изображения автоматически подстраивается в соответствии с его пропорциями */
+    transform: rotate(-7deg); /* Поворачивает изображение на 7 градусов против часовой стрелки */
+}
+
+.image3 { 
+    top: 130px; /* Устанавливает верхнее положение изображения на 200 пикселей от верхнего края */
+    left: 40px; /* Устанавливает левое положение изображения на 200 пикселей от левого края (зеркальное размещение) */
+    width: 14vw; /* Устанавливает ширину изображения на 14% от ширины окна просмотра */
+    height: auto; /* Высота изображения автоматически подстраивается в соответствии с его пропорциями */
+    transform: rotate(22deg); /* Поворачивает изображение на 8 градусов по часовой стрелке */
+}
+
+.image4 { 
+    top: 10px; /* Устанавливает верхнее положение изображения на 0 пикселей от верхнего края */
+    left: 310px; /* Устанавливает левое положение изображения на 250 пикселей от левого края (зеркальное размещение) */
+    width: 14vw; /* Устанавливает ширину изображения на 14% от ширины окна просмотра */
+    height: auto; /* Высота изображения автоматически подстраивается в соответствии с его пропорциями */
+    transform: rotate(-19deg); /* Поворачивает изображение на 12 градусов против часовой стрелки */
+}
+
+.image5 { 
+    top: 400px; /* Устанавливает верхнее положение изображения на 400 пикселей от верхнего края */
+    left: 1550px; /* Устанавливает левое положение изображения на 1200 пикселей от левого края */
+    width: 14vw; /* Устанавливает ширину изображения на 14% от ширины окна просмотра */
+    height: auto; /* Высота изображения автоматически подстраивается в соответствии с его пропорциями */
+    transform: rotate(17deg); /* Поворачивает изображение на 17 градусов по часовой стрелке */
+}
+
+.image6 { 
+    top: 686px; /* Устанавливает верхнее положение изображения на 500 пикселей от верхнего края */
+    left: 1550px; /* Устанавливает левое положение изображения на 1300 пикселей от левого края */
+    width: 14vw; /* Устанавливает ширину изображения на 14% от ширины окна просмотра */
+    height: auto; /* Высота изображения автоматически подстраивается в соответствии с его пропорциями */
+    transform: rotate(-13deg); /* Поворачивает изображение на 13 градусов против часовой стрелки */
+}
+
+.image7 { 
+    top: 100px; /* Устанавливает верхнее положение изображения на 650 пикселей от верхнего края */
+    left: 1630px; /* Устанавливает левое положение изображения на 1100 пикселей от левого края */
+    width: 14vw; /* Устанавливает ширину изображения на 14% от ширины окна просмотра */
+    height: auto; /* Высота изображения автоматически подстраивается в соответствии с его пропорциями */
+    transform: rotate(-22deg); /* Поворачивает изображение на 22 градуса по часовой стрелке */
+}
+
+.image8 { 
+    top: 10px; /* Устанавливает верхнее положение изображения на 700 пикселей от верхнего края */
+    left: 1340px; /* Устанавливает левое положение изображения на 1600 пикселей от левого края */
+    width: 14vw; /* Устанавливает ширину изображения на 14% от ширины окна просмотра */
+    height: auto; /* Высота изображения автоматически подстраивается в соответствии с его пропорциями */
+    transform: rotate(19deg); /* Поворачивает изображение на 17 градусов по часовой стрелке */
+}
+
+.image-container:hover {
+    transform: scale(1.1) rotate(5deg); /* Увеличение размера и небольшое вращение */
+    opacity: 1; /* Полная непрозрачность при наведении */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Увеличенная тень при наведении */
+}
+
+/* Анимация появления при загрузке */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Полная непрозрачность */
+    }
+}
+
+/* Применяем анимацию к каждому изображению с задержкой */
+.image-container {
+    animation: fadeIn 0.5s forwards;
+}
+.image1 { animation-delay: 0.1s; }
+.image2 { animation-delay: 0.2s; }
+.image3 { animation-delay: 0.3s; }
+.image4 { animation-delay: 0.4s; }
+.image5 { animation-delay: 0.5s; }
+.image6 { animation-delay: 0.6s; }
+.image7 { animation-delay: 0.7s; }
+.image8 { animation-delay: 0.8s; }
+
+/* Медиа-запросы для дополнительных адаптивных стилей */
+@media (max-width: 768px) {
+    .image-container {
+        max-width: 80vw; 
+        max-height: 80vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        max-width: 90vw; 
+        max-height: 90vh; 
+    }
+}
+    </style>
+</head>
+<body>
+    <img class="image-container image1" src="Изображения/4,4.jpg" alt="Слфи с котом " loading="lazy">
+    <img class="image-container image2" src="Изображения/2,2.jpg" alt="Фотография собаки с черным ухом" loading="lazy">                
+    <img class="image-container image3" src="Изображения/55.jpg" alt="Слфи с котом " loading="lazy">
+    <img class="image-container image4" src="Изображения/77.png" alt="Слфи с котом " loading="lazy">
+    <img class="image-container image5" src="Изображения/11.png" alt="Фотография собаки с черным ухом" loading="lazy">
+    <img class="image-container image6" src="Изображения/88.jpg" alt="Фотография собаки с черным ухом" loading="lazy">
+    <img class="image-container image7" src="Изображения/16.jpg" alt="Слфи с котом " loading="lazy">
+
+    <img class="image-container image8" src="Изображения/66.jpg" alt="Слфи с котом " loading="lazy">
+
+   
+
+</body>
+</html>
+        <!-- Основной контент -->
+        <main>
+            <div class="story">
+                <h2>Наши контакты</h2>
+                Контактная информация:
+                
+                <p>• Телефон: +7 (968) 551-00-61</p>
+                
+                <p>• Электронная почта: <a href="mailto:gomklgoiklpi35807@gmail.com">gomklgoiklpi35807@gmail.com</a></p>
+                
+                <p>• Адрес:село Закубежье, Сергиево-Посадский городской округ, Московская область</p>
+                
+                <p>• Часы работы: Пн-Пт: 9:00 - 18:00; Сб-Вс: выходной</p>
+                
+                <h2>Социальные сети:</h2>
+                <ul>
+                    <li style="display: flex; justify-content: space-between; align-items: center;">
+                        <a href="https://t.me/your_telegram_username" target="_blank">Telegram</a>
+                        <div style="margin-left: 10px;">
+                            <img src="D:\Диплом6\Изображения\4 телеграм.jfif" alt="QR-код Telegram" style="max-width: 100px; height: auto;">
+                        </div>
+                    </li>
+                    <li style="display: flex; justify-content: space-between; align-items: center;">
+                        <a href="https://wa.me/qr/TTCNCPXN7FPVI1" target="_blank">WhatsApp</a>
+                        <div style="margin-left: 10px;">
+                            <img src="D:\Диплом6\Изображения\5 воодсап.jfif" alt="QR-код WhatsApp" style="max-width: 100px; height: auto;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Карта -->
+            <div class="map-container">
+                <h2>Наша локация</h2>
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.1685127552695!2d37.979153!3d56.653685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415c7c9e4c8e47b7%3A0x8dfb5fbc5c66b4e3!2z0JrQu9C40L7QvNC-0L3QvtC70YzQutC-0L3RgtC10LzQvdC-0LzQvtC70YzQutC-0L3RgtC10LzQvdC-0LzQvtC70YzQutC-0L3RgtC10LzQvdC-0LzQvtC70YzQutC-0L3RgtC10LzQvdC-0LzQvtC70YzQutC-0L3RgtC10LzQvdC-0LzQvtC70YzQutC-0L3RgtC10LzQvdC-0LzQvtC70YzQutC-0L3RgtC10LzQvdA%3D%3D!5e0!3m2!1sru!2sru!4v1636720834886!5m2!1sru!2sru" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+            
+            </div>
+            
+    <footer class="footer">
+        © 2025 Фотолаборатория «Белый Бим черное ухо». Все права защищены.
+    </footer>
+</body>
+</html>
+        </main>
+
+    </footer>
+
+</body>   
+</html>

@@ -1,0 +1,208 @@
+:root {
+    --font-family: 'Arial', sans-serif;
+    --color-background: linear-gradient(to right, #BC987E, #D9C3B9);
+    --color-dark: #333;
+    --color-light: rgba(255, 255, 255, 0.9);
+    --color-footer: #A0522D;
+    --padding-small: 6.67px;
+    --padding-medium: 13.33px;
+    --border-radius: 3.33px;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    min-height: 100vh;
+    background-image: var(--color-background);
+    color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top-footer {
+    background-color: var(--color-footer);
+    padding: var(--padding-medium) 0; 
+    text-align: center;
+    color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.logo {
+    width: 4vw; 
+    height: auto;
+    margin-top: 10px; 
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: var(--padding-medium); 
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: var(--padding-small) var(--padding-medium); 
+    border-radius: var(--border-radius); 
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; 
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+/* Основной контент */
+main {
+    flex-grow: 1;
+    padding: var(--padding-medium); 
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    box-shadow: 0 0.67vw 3vw rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    max-width: 53.33vw; 
+    margin: var(--padding-medium) auto; 
+    border-radius: calc(var(--border-radius) * 2); 
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+   from { opacity: 0; transform: translateY(20px); }
+   to { opacity: 1; transform: translateY(0); }
+}
+
+main {
+   animation: fadeIn 0.5s ease-in-out; 
+}
+
+/* Анимация пульсации для кнопки */
+@keyframes pulse {
+   0% { transform: scale(1); }
+   50% { transform: scale(1.05); }
+   100% { transform: scale(1); }
+}
+
+/* Анимация пульсации при наведении на ссылки */
+nav a:hover {
+   animation: pulse 1s infinite; 
+}
+
+/* Изображения */
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8 {
+   position: absolute; /* Позиционирование изображений */
+   width: 14vw; /* Ширина изображений по умолчанию */
+   height: auto; /* Высота автоматически подстраивается */
+}
+
+/* Позиционирование изображений */
+.image1 { top: 618px; left: 105px; transform: rotate(15deg); }
+.image2 { top: 350px; left: 86px; transform: rotate(-7deg); }
+.image3 { top: 130px; left: 40px; transform: rotate(22deg); }
+.image4 { top: 10px; left: 310px; transform: rotate(-19deg); }
+.image5 { top: 400px; left: 1550px; transform: rotate(17deg); }
+.image6 { top: 576px; left: 1480px; transform: rotate(-13deg); }
+.image7 { top: 100px; left: 1630px; transform: rotate(-22deg); }
+.image8 { top: 10px; left: 1340px; transform: rotate(19deg); }
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+   nav ul {
+       flex-direction: column;
+       align-items: center; 
+   }
+   .logo {
+       width: 25vw; /* Увеличен размер логотипа для мобильных устройств */
+       margin-top: 5px; /* Уменьшено с 10px до 5px */
+   }
+   main {
+       max-width: 90vw; 
+       padding: var(--padding-small); 
+   }
+   h1 {
+       font-size: 24px; 
+   }
+   nav a {
+       padding: var(--padding-small) calc(var(--padding-medium) / 2);
+
+
+       font-size: 16px; /* Увеличен размер шрифта для удобства чтения */
+   }
+
+   /* Адаптация изображений для мобильных устройств */
+   .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8 {
+       width: 30vw; /* Увеличиваем ширину изображений для мобильных устройств */
+       left: auto; /* Сбрасываем абсолютное позиционирование по оси X */
+       right: auto; /* Сбрасываем абсолютное позиционирование по оси Y */
+       position: relative; /* Позиционируем относительно родителя */
+       margin-bottom: var(--padding-medium); /* Отступ между изображениями */
+   }
+
+   /* Позиционирование изображений для мобильных устройств */
+   .image1 { top: auto; margin-top: -50%; } /* Пример смещения изображения */
+   .image2 { top: auto; margin-top: -30%; }
+   .image3 { top: auto; margin-top:-10%; }
+}
+
+/* Планшеты */
+@media (min-width: 769px) and (max-width: 1024px) {
+   .logo {
+       width: 20vw; /* Увеличен размер логотипа для планшетов */
+       margin-top: 10px; 
+   }
+   main {
+       max-width: 70vw; 
+   }
+   h1 {
+       font-size: 26px; 
+   }
+
+   /* Адаптация изображений для планшетов */
+   .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8 {
+       width: 20vw; /* Уменьшаем ширину изображений для планшетов */
+   }
+}
+
+/* Большие экраны */
+@media (min-width: 1025px) {
+   .logo {
+       width: 6vw; 
+       margin-top: 15px; 
+   }
+   main {
+       max-width: 50vw; 
+   }
+   h1 {
+       font-size: 32px; 
+   }
+}
